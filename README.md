@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# ai-recruiter-voice-agent
+AI Recruiter Voice Agent is an AI-powered recruitment assistant that helps automate the hiring process using speech recognition, natural language understanding, and voice-based interaction. It can conduct voice interviews, analyze candidate responses, and provide real-time feedback — reducing manual effort for recruiters.
+>>>>>>> 3a77a0c3e094c4722d80b1cea4aa68764504ff23
