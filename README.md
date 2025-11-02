@@ -37,5 +37,37 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 =======
 # ai-recruiter-voice-agent
-AI Recruiter Voice Agent is an AI-powered recruitment assistant that helps automate the hiring process using speech recognition, natural language understanding, and voice-based interaction. It can conduct voice interviews, analyze candidate responses, and provide real-time feedback — reducing manual effort for recruiters.
->>>>>>> 3a77a0c3e094c4722d80b1cea4aa68764504ff23
+# 🎙️ AI Recruiter Voice Agent
+
+An AI-powered recruiter that conducts interviews using voice interaction.  
+It analyzes candidate responses, asks dynamic follow-up questions, and evaluates sentiment —  
+making the hiring process faster, smarter, and more human-like.
+
+## 🚀 Features
+- 🎤 Voice-based interview interaction
+- 🤖 AI-driven question generation
+- 💬 Real-time sentiment analysis
+- 📊 Candidate evaluation and feedback
+- 🌐 Web-based interface using React
+- 🔗 Backend powered by Flask / FastAPI (edit as per your project)
+
+- ## 🛠️ Tech Stack
+- **Frontend:** React.js, Tailwind CSS  
+- **Backend:** Python (Flask / FastAPI)  
+- **AI/ML:** OpenAI API / HuggingFace models  
+- **Database:** Supabase / Firebase  
+- **Voice:** SpeechRecognition, gTTS, Whisper API
+
+- ## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/mukta-avhad/ai-recruiter-voice-agent.git
+
+
+
+## 📬 Contact
+Created with ❤️ by [Mukta Avhad](https://github.com/mukta-avhad)  
+📧 Email: avhadmukta0207@gmail.com
+
+
