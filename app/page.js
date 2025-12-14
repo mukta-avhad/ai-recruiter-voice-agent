@@ -1,57 +1,29 @@
 "use client"
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import React from 'react'
+import { useRouter } from 'next/navigation'
+import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 
-import { useRouter } from "next/router";
+export default function LandingPage() {
+  const router = useRouter()
 
-export default function Home() {
-  const router = useRouter();
-
-  const handleStart = () => {
-    router.push("/auth"); // redirect to login page
-  };
+  const goToAuth = () => {
+    router.push('/auth')
+  }
 
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>Welcome to AI Recruiter!</h1>
-      <p style={styles.subtitle}>Start your interview journey with us</p>
-      <button style={styles.button} onClick={handleStart}>
-        Click Here to Start Your Interview Journey
-      </button>
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
+      <h1 className="text-4xl font-bold mb-6">Welcome to AiCruiter</h1>
+      <p className="text-lg mb-8 text-center max-w-md">
+        Your AI-powered recruitment assistant is here!  
+        Click below to start your journey.
+      </p>
+      <Button onClick={goToAuth} className="px-8 py-4 text-lg font-semibold">
+        Start Your Journey
+      </Button>
+      <div className="mt-10">
+        <Image src="/logo.jpeg" width={150} height={50} alt="logo" />
+      </div>
     </div>
-  );
+  )
 }
-
-const styles = {
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    minHeight: "100vh",
-    textAlign: "center",
-    padding: "0 20px",
-    background: "linear-gradient(to right, #667eea, #764ba2)",
-    color: "#fff",
-  },
-  title: {
-    fontSize: "2.5rem",
-    fontWeight: "bold",
-    marginBottom: "1rem",
-  },
-  subtitle: {
-    fontSize: "1.2rem",
-    marginBottom: "2rem",
-  },
-  button: {
-    padding: "1rem 2rem",
-    fontSize: "1rem",
-    fontWeight: "bold",
-    color: "#764ba2",
-    backgroundColor: "#fff",
-    border: "none",
-    borderRadius: "8px",
-    cursor: "pointer",
-    transition: "all 0.3s ease",
-  },
-};
