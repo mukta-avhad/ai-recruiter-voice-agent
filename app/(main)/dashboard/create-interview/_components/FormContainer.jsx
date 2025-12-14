@@ -18,7 +18,7 @@ function FormContainer({onHandleInputChange, GoToNext}) {
     const [interviewType, setInterviewType]=useState([]);
 
     useEffect(()=>{
-        if(interviewType)
+        if(interviewType) 
         {
             onHandleInputChange('type', interviewType)
         }
