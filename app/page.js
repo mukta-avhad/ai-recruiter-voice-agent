@@ -21,9 +21,7 @@ export default function LandingPage() {
       <Button onClick={goToAuth} className="px-8 py-4 text-lg font-semibold">
         Start Your Journey
       </Button>
-      <div className="mt-10">
-        <Image src="/logo.jpeg" width={150} height={50} alt="logo" />
-      </div>
+     
     </div>
   )
 }
