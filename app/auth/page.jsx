@@ -10,8 +10,9 @@ function Login() {
         const {error}=await supabase.auth.signInWithOAuth({
             provider:'google',
              options: {
-      redirectTo: `${window.location.origin}/dashboard`
+      prompt: "select_account"
     }
+        
         })
         if(error)
         {
