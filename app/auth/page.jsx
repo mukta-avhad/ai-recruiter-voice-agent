@@ -10,15 +10,16 @@ function Login() {
         const {error}=await supabase.auth.signInWithOAuth({
             provider:'google',
              options: {
-      prompt: "select_account"
+      prompt: "select_account",
+      redirectTo: `${window.location.origin}/auth/callback`
     }
         
-        })
+        });
         if(error)
         {
-            console.error('Error:',error.message)
+            console.error('Error:',error.message);
         }
-    }
+    };
 
 
     return (
