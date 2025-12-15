@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -9,8 +9,8 @@ function Login() {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
        options: {
-      prompt: "select_account", // forces chooser
-      redirectTo: `${window.location.origin}/dashboard` // after login redirect
+      prompt: "select_account" // forces chooser
+      
     }
      
     });
@@ -53,4 +53,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Login
