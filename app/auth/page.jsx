@@ -10,7 +10,7 @@ function Login() {
       provider: "google",
        options: {
       prompt: "select_account", // forces chooser
-      redirectTo: `${window.location.origin}/auth/callback` // after login redirect
+      redirectTo: `${window.location.origin}/dashboard` // after login redirect
     }
      
     });
