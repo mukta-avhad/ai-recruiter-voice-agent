@@ -7,11 +7,8 @@ import { supabase } from "@/services/supabaseClient";
 function Login() {
   const signInWithGoogle = async () => {
     const { error } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        prompt: "select_account", // forces email chooser
-        redirectTo: `${window.location.origin}/auth/callback`, // redirect after login
-      },
+      provider: "google"
+     
     });
 
     if (error) {
